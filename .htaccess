@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /crm_system/
+
+# API Routes
+RewriteRule ^api/login$ api/auth.php [L]
+RewriteRule ^api/register$ api/auth.php [L]
+RewriteRule ^api/logout$ api/auth.php [L]
+
+# Redirect root to login
+RewriteRule ^$ pages/login.html [L]

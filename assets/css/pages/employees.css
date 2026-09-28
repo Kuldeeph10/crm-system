@@ -1,0 +1,392 @@
+/* ========================================
+   Employee Management Page Styles
+   ======================================== */
+
+/* Button Group */
+.btn-group {
+    display: flex;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.active-view {
+    background: #3498db !important;
+    color: white !important;
+    border: none;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* Filters Card */
+.filters-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filters-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.filter-actions {
+    min-width: auto;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.action-buttons-group {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.form-control {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Stats Summary */
+.stats-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Date Groups */
+.date-group {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.date-header {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.date-header i {
+    transition: transform 0.3s;
+    color: #3498db;
+}
+
+.date-header.collapsed i {
+    transform: rotate(-90deg);
+}
+
+.date-header strong {
+    font-size: 14px;
+    color: #333;
+}
+
+.employee-count {
+    margin-left: auto;
+    font-size: 12px;
+    color: #666;
+}
+
+.date-content {
+    padding: 15px;
+    display: block;
+}
+
+.date-content.hide {
+    display: none;
+}
+
+/* List Containers */
+.simple-list, .flat-list {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.simple-header, .flat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.simple-header h3, .flat-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Table Styles */
+.employees-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.employees-table th,
+.employees-table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+.employees-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.employees-table tr:hover {
+    background: #f5f5f5;
+}
+
+.serial-number {
+    color: #666;
+    text-align: center;
+    width: 50px;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.status-active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 11px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-edit {
+    background: #f39c12;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #e67e22;
+}
+
+.btn-password {
+    background: #1abc9c;
+    color: white;
+}
+
+.btn-password:hover {
+    background: #16a085;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+}
+
+.btn-view {
+    background: #3498db;
+    color: white;
+}
+
+.btn-view:hover {
+    background: #2980b9;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-info {
+    background: #1abc9c;
+    color: white;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px;
+    background: white;
+    border-radius: 12px;
+}
+
+.empty-state i {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Loading */
+.loading-text {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    color: #666;
+}
+
+/* Toast */
+.toast-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    animation: slideIn 0.3s ease;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .filters-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .stats-summary {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .btn-group {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header-actions {
+        flex-wrap: wrap;
+    }
+    
+    .employees-table th,
+    .employees-table td {
+        padding: 8px 6px;
+        font-size: 11px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 3px;
+    }
+    
+    .btn-sm {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+}
